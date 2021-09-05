@@ -29,9 +29,15 @@ const config = {
       {
         test: /\.(js|jsx|tsx|ts)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+        use: [
+          { loader: 'babel-loader' },
+          { 
+            loader: 'eslint-loader',
+            options: {
+              cache: true,
+            },
+          }
+        ],
       },
       {
         test: /\.css$/,
@@ -49,7 +55,7 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-    }),
+    })
   ]
 }
 
