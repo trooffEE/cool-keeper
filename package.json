@@ -1,0 +1,28 @@
+{
+  "name": "cool-keeper",
+  "version": "1.0.0",
+  "description": "This projects takes an idea of https://keep.google.com/ but will do that on it's own way. For now since i don't know much of backend site (a.k dark side) there will be front-end only part of the project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trooffEE/cool-keeper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trooffEE/cool-keeper/issues"
+  },
+  "homepage": "https://github.com/trooffEE/cool-keeper#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-react": "^7.14.5"
+  }
+}
