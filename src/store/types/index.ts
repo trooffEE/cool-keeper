@@ -1,0 +1,1 @@
+// This file for TypeScript interfaces
