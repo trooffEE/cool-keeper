@@ -1,7 +1,8 @@
 import * as React from 'react'
 
-import alarmImg from '@assets/icons/box.svg'
-import ButtonWithIcon from '@/shared-styles/components/ButtonWithIcon'
+import ButtonWithIcon from '@/components/_uikit/buttons/ButtonWithIcon'
+import Background from '@/styles/shared/components/Background'
+import HeaderWrapper from '@/styles/shared/layout/HeaderWrapper'
 
 interface IHeaderProps {
   isSearchAvailable?: boolean
@@ -10,12 +11,18 @@ interface IHeaderProps {
 const Header: React.FunctionComponent<IHeaderProps> = ({
   isSearchAvailable = false,
 }) => {
+  function handleExpandHeader() {
+    console.log(123)
+  }
+
   return (
-    <header>
-      <ButtonWithIcon>
-        <img src={alarmImg} alt="alarm" />
-      </ButtonWithIcon>
-    </header>
+    <Background>
+      <HeaderWrapper>
+        <header>
+          <ButtonWithIcon handleClick={handleExpandHeader}>menu rounded</ButtonWithIcon>
+        </header>
+      </HeaderWrapper>
+    </Background>
   )
 }
 
