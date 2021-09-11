@@ -1,7 +1,17 @@
 import React from 'react'
 
-const App: React.FC = (props) => {
-  return <div>Webpack is cool!</div>;
-};
+import Header from '@/components/layout/Header'
+import Sidebar from '@/components/layout/Sidebar'
 
-export default App;
+interface IApplicationProps {}
+
+const App: React.FC = (props: IApplicationProps) => {
+  return (
+    <>
+      <Header />
+      <Sidebar />
+    </>
+  )
+}
+
+export default App
