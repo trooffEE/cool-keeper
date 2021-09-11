@@ -1,6 +1,17 @@
 {
   "parser": "babel-eslint",
   "rules": {
-    "quotes": [2, "single", { "avoidEscape": true }]
+    "indent": [
+        "error",
+        "tab"
+    ],
+    "quotes": [1, "single", { "avoidEscape": true }],
+    "comma-dangle": ["error", {
+        "arrays": "always",
+        "objects": "always",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+    }]
   }
 }

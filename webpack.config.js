@@ -19,6 +19,7 @@ const config = {
     modules: [join(__dirname, 'src'), 'node_modules'],
     extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
     alias: {
+      '@': resolvePath('./src'),
       '@components': resolvePath('./src/components'),
       '@assets': resolvePath('./src/assets'),
       '@services': resolvePath('./src/services'),
@@ -66,7 +67,6 @@ if (isProd) {
 } else {
   config.devServer = {
     port: 8080,
-    hot: true,
     compress: true,
   };
 }
