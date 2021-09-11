@@ -34,11 +34,12 @@ const config = {
           { loader: 'babel-loader' },
           { 
             loader: 'eslint-loader',
-            options: {
-              cache: true,
-            },
           }
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
       {
         test: /\.css$/,
@@ -67,6 +68,7 @@ if (isProd) {
 } else {
   config.devServer = {
     port: 8080,
+    hot: true,
     compress: true,
   };
 }
