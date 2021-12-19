@@ -19,9 +19,10 @@ const config = {
     modules: [join(__dirname, 'src'), 'node_modules'],
     extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
     alias: {
-      '@components': resolvePath('./src/components'),
-      '@assets': resolvePath('./src/assets'),
-      '@services': resolvePath('./src/services'),
+      '@': resolvePath('src'),
+      '@components': resolvePath('src/components'),
+      '@assets': resolvePath('src/assets'),
+      '@services': resolvePath('src/services'),
     },
   },
   module: {

@@ -1,7 +1,9 @@
 import React from 'react'
 
-const App: React.FC = (props) => {
-  return <div>Webpack is cool!</div>;
+import { IUserData } from '@/store/types'
+
+const App: React.FC<IUserData> = (props) => {
+  return <p>Webpack is cool!</p>;
 };
 
 export default App;
